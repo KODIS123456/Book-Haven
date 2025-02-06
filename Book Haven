@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            background-color: #AFEEEE;
+            color: black;
+            font-family: Calibri, sans-serif;
+        }
+        header {
+            background-color: #87CEEB;
+            font-family: Trebuchet MS, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            font-size: 25px;
+            font-family: Impact, sans-serif;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+        #subscribe {
+            background-color: #98FB98;
+            padding: 20px;
+            text-align: center;
+            font-family: Comic Sans MS, sans-serif;
+            font-size: 15px;
+        }
+        footer {
+            background-color: #D988EA;
+            padding: 10px;
+            text-align: center;
+            font-size: 11px;
+            font-family: Comfortaa, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Haven Bookstore</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="subscribe">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="subscribe-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="subscribe-message"></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Book Haven Bookstore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- Gallery Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Book Haven Gallery</h1>
+    </header>
+    <main>
+        <section id="gallery">
+            <h2>Shop Our Collection</h2>
+            <div class="gallery-grid">
+                <div class="book">
+                    <img src="Client3_Book1.png" alt="Book 1">
+                    <p>Book 1 - $10</p>
+                    <button onclick="addToCart('Book 1', 10)">Add to Cart</button>
+                </div>
+                <div class="book">
+                    <img src="Client3_Book2.png" alt="Book 2">
+                    <p>Book 2 - $10</p>
+                    <button onclick="addToCart('Book 2', 10)">Add to Cart</button>
+                </div>
+                <div class="book">
+                    <img src="Client3_Book3.png" alt="Book 3">
+                    <p>Book 3 - $10</p>
+                    <button onclick="addToCart('Book 3', 10)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+<!-- About Us Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <h1>About Book Haven</h1>
+    </header>
+    <main>
+        <p>Our mission at Book Haven is to create a welcoming space where literature lovers can explore, learn, and connect. We believe in the power of books to inspire and transform lives, and we strive to make reading accessible to all.</p>
+    </main>
+</body>
+</html>
+
+<!-- Community Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+</head>
+<body>
+    <header>
+        <h1>Book Haven Community</h1>
+    </header>
+    <main>
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>Book Reading Night - Every Friday at 6 PM</li>
+            <li>Author Meet & Greet - Monthly Special Event</li>
+            <li>Writing Workshop - Every Second Saturday</li>
+        </ul>
+    </main>
+</body>
+</html>
